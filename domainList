@@ -1,0 +1,11 @@
+function getDomains() {
+	var domains = []
+
+	for (i = 0; i < document.getElementsByClassName("domain-name").length; i++) {
+		domains.push(document.getElementsByClassName("domain-name")[i].innerText);
+	}
+
+	return domains;
+}
+
+getDomains()
